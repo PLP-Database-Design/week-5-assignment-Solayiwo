@@ -53,7 +53,7 @@ app.get("/providers", (req, res) => {
     db.query(providers, (error, data) => {
         if (error) {
             console.error(error)
-            return res.status(500).send({message: "Fail to get patients"})
+            return res.status(500).send({message: "Fail to get providers"})
         }
 
         //res.status(200).json(data)
